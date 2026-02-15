@@ -1,0 +1,50 @@
+<div class="card">
+  <h2>Text Remapper</h2>
+
+  <form [formGroup]="converterForm">
+    <div class="input-group">
+      <label>Input</label>
+      <textarea 
+        formControlName="sourceInput" 
+        placeholder="Type here..."
+        rows="8">
+      </textarea>
+    </div>
+
+    <div class="input-group">
+      <label>Output</label>
+      <div class="copy-container">
+        <textarea 
+          formControlName="targetInput" 
+          rows="8"
+          readonly>
+        </textarea>
+
+        <!-- <button 
+          type="button" 
+          (click)="copyToClipboard()" 
+          [disabled]="!converterForm.get('targetInput')?.value">
+          {{ copied ? 'Copied!' : 'Copy' }}
+        </button> -->
+      </div>
+    </div>
+    <div class="input-group">
+      <label>Output View</label>
+      <textarea 
+      class="sinhala-textarea"
+      formControlName="targetInput" 
+      rows="8"
+      readonly>
+    </textarea>
+    </div> 
+  </form>
+
+  <div class="mapping-hint">
+  <!-- Rules:
+  <ng-container *ngFor="let rule of displayRules; let last = last">
+    <code>{{ rule.from }} → {{ rule.to }}</code>
+    <span *ngIf="!last"> | </span>
+  </ng-container>
+</div> -->
+</div>
+

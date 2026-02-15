@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #121212;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center the card */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bigger card */
+.card {
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 16px;
+  width: 800px;   /* Increased width */
+  max-width: 95%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+.card h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+/* Textarea styling */
+textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: vertical;
+  min-height: 180px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+textarea:focus {
+  border-color: #4cafef;
+  box-shadow: 0 0 0 2px rgba(76, 175, 239, 0.2);
+}
+
+/* Copy layout */
+.copy-container {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+/* Make output textarea take full width */
+.copy-container textarea {
+  flex: 1;
+}
+
+/* Button */
+button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #4cafef;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 500;
+  height: fit-content;
+}
+
+button:hover:not(:disabled) {
+  background: #3a9bdc;
+}
+
+button:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+.mapping-hint {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.mapping-hint code {
+  background: #2a2a2a;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: #4cafef;
+}
+
+@font-face {
+  font-family: 'FMAbhaya';
+  src: url('assets/fonts/FMAbhaya.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sinhala-textarea {
+  font-family: 'FMAbhaya', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #2a2a2a;
+  color: #fff;  
+  resize: vertical;
+  min-height: 180px;
+  outline: none;
+  transition: 0.2s ease;
+}
