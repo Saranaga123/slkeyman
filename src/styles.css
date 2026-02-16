@@ -35,7 +35,7 @@ body::before {
   border-radius: 16px;
   width: 800px;   /* Increased width */
   max-width: 95%;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 -5px 20px rgba(215, 215, 215, 0.43);
   color: #ffffff;
   opacity: 0.95;
 }
