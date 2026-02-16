@@ -1,6 +1,6 @@
 <div class="card">
-  <h2>Kylie's SLKey</h2>
-  <h3>Hope this will make things easy for you !</h3>
+  <h2 style="color: #ef516c;">🌸 Kylie's SLKey 🌸</h2>
+  <h3>Keep writing, Your words carries magic !</h3>
 
   <form [formGroup]="converterForm">
     <div class="input-group">
@@ -8,15 +8,15 @@
       <textarea 
         formControlName="sourceInput" 
         placeholder="Type here..."
-        rows="5">
+        rows="4">
       </textarea>
     </div>
     <div class="input-group">
-      <label>SL View</label>
+      <label>Sinhala View</label>
         <textarea 
         class="sinhala-textarea"
         formControlName="targetInput" 
-        rows="5"
+        rows="4"
         readonly>
         
     </textarea>
@@ -26,7 +26,7 @@
       <div class="copy-container">
         <textarea 
           formControlName="targetInput" 
-          rows="5"
+          rows="4"
           readonly>
         </textarea>
 
@@ -42,6 +42,7 @@
   </form>
 
   <div class="mapping-hint">
+    <div style="position: fixed;bottom: 10px ;right :10px; font-size: 18px; font-weight: bold;">made with ❤️ by Asad</div>
   <!-- Rules:
   <ng-container *ngFor="let rule of displayRules; let last = last">
     <code>{{ rule.from }} → {{ rule.to }}</code>

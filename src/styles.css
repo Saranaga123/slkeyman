@@ -31,9 +31,9 @@ body::before {
 /* Bigger card */
 .card {
   background: #1e1e1e;
-  padding: 40px;
+  padding: 25px;
   border-radius: 16px;
-  width: 800px;   /* Increased width */
+  width: 600px;   /* Increased width */
   max-width: 95%;
   box-shadow: 0 -5px 20px rgba(215, 215, 215, 0.43);
   color: #ffffff;
@@ -43,19 +43,19 @@ body::before {
 .card h2 {
   margin-top: 0;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   font-weight: 600;
   font-size: 24px;
 }
 .card h3 {
   margin-top: 0;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   font-weight: 600;
   font-size: 18px;
 }
 .input-group {
-  margin-bottom: 22px;
+  margin-bottom: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -76,7 +76,7 @@ textarea {
   font-size: 15px;
   line-height: 1.5;
   resize: vertical;
-  min-height: 140px;
+  min-height: 100px;
   outline: none;
   transition: 0.2s ease;
 }
@@ -151,7 +151,7 @@ button:disabled {
   background: #2a2a2a;
   color: #fff;  
   resize: vertical;
-  min-height: 140px;
+  min-height: 100px;
   outline: none;
   transition: 0.2s ease;
 }
