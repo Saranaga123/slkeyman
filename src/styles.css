@@ -2,19 +2,31 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
 
-  background-image: url("assets/bg.jpg");
+body {
+  background-image: url("assets/bg.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-/* Center the card */
-body {
-  display: flex;
+  position: relative;
+   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* Full screen overlay */
+body::before {
+  content: "";
+  position: fixed;   /* covers entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.534);  /* adjust opacity here */
+  z-index: -1;
+}
+ 
 
 /* Bigger card */
 .card {
