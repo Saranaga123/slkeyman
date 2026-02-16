@@ -26,8 +26,9 @@ export class AppComponent implements OnInit {
     ',': '"',
     "'": 'z',
     '"': 'Z',
-    'SRI': '•',
-    'sri': '•',
+    'SRI': '›',
+    'sri': '›',
+    '?':'@', 
 
     'c': 'la',
     'ca': 'l',
@@ -376,6 +377,7 @@ export class AppComponent implements OnInit {
     'broo': 'fn%da',
     'BH': 'Na',
     'BHa': 'N',
+    'Bha': 'N', 
     'BHaa': 'Nd',
     'BHA': 'Ne',
     'BHAA': 'NE',
@@ -390,6 +392,22 @@ export class AppComponent implements OnInit {
     'BHra': 'N%',
     'BHro': 'fN%d',
     'BHroo': 'fN%da',
+    'B': 'Na',
+    'Ba': 'N', 
+    'Baa': 'Nd',
+    'BA': 'Ne',
+    'BAA': 'NE',
+    'Bo': 'fNd',
+    'Boo': 'fNda',
+    'Bu': 'N=',
+    'Buu': 'N+',
+    'Be': 'fN',
+    'Bee': 'fNA',
+    'Bi': 'Ns',
+    'Bii': 'NS',  
+    'Bra': 'N%',
+    'Bro': 'fN%d',
+    'Broo': 'fN%da',
 
     'm': 'ï',
     'ma': 'u',
@@ -607,13 +625,12 @@ export class AppComponent implements OnInit {
     'fra': '*%',
     'fro': 'f*%d',
     'froo': 'f*%da',
+ 
 
     
   };
   displayRules: { from: string; to: string }[] = [
-    { from: 'ka', to: 'lr' },
-    { from: 'a', to: 'w' },
-    { from: 'apple', to: 'orange' }
+    { from: 'x', to: 'o' },  
   ];
   converterForm = new FormGroup({
     sourceInput: new FormControl(''),
