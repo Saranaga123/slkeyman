@@ -1,5 +1,6 @@
 <div class="card">
-  <h2>My Wify ! Hope this will make things easy for you ❤️</h2>
+  <h2>Kylie's SLKey</h2>
+  <h3>Hope this will make things easy for you !</h3>
 
   <form [formGroup]="converterForm">
     <div class="input-group">
@@ -7,36 +8,37 @@
       <textarea 
         formControlName="sourceInput" 
         placeholder="Type here..."
-        rows="8">
+        rows="5">
       </textarea>
     </div>
-
     <div class="input-group">
-      <label>Blah Blah Output</label>
+      <label>SL View</label>
+        <textarea 
+        class="sinhala-textarea"
+        formControlName="targetInput" 
+        rows="5"
+        readonly>
+        
+    </textarea>
+    </div>
+    <div class="input-group">
+      <label>Mapped Output</label>
       <div class="copy-container">
         <textarea 
           formControlName="targetInput" 
-          rows="8"
+          rows="5"
           readonly>
         </textarea>
 
-        <!-- <button 
+        <button 
           type="button" 
           (click)="copyToClipboard()" 
           [disabled]="!converterForm.get('targetInput')?.value">
           {{ copied ? 'Copied!' : 'Copy' }}
-        </button> -->
+        </button>
       </div>
     </div>
-    <div class="input-group">
-      <label>View</label>
-      <textarea 
-      class="sinhala-textarea"
-      formControlName="targetInput" 
-      rows="8"
-      readonly>
-    </textarea>
-    </div> 
+     
   </form>
 
   <div class="mapping-hint">
