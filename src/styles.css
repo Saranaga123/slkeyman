@@ -155,3 +155,6 @@ button:disabled {
   outline: none;
   transition: 0.2s ease;
 }
+.sinhalafonts{
+  font-family: 'FMAbhaya', sans-serif;
+}

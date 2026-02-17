@@ -29,6 +29,8 @@ export class AppComponent implements OnInit {
     'SRI': '›',
     'sri': '›',
     '?':'@', 
+    'RA': '/',
+    'RAA': '?',
 
     'c': 'la',
     'ca': 'l',
@@ -630,7 +632,9 @@ export class AppComponent implements OnInit {
     
   };
   displayRules: { from: string; to: string }[] = [
-    { from: 'x', to: 'o' },  
+    { from: 'x', to: 'x' },
+    { from: 'RA', to: '/' },  
+    { from: 'RAA', to: '?' }, 
   ];
   converterForm = new FormGroup({
     sourceInput: new FormControl(''),

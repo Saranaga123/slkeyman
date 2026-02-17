@@ -45,7 +45,7 @@
     <div style="position: fixed;bottom: 10px ;right :10px; font-size: 18px; font-weight: bold;">made with ❤️ by Asad</div>
   Rules:
   <ng-container *ngFor="let rule of displayRules; let last = last">
-    <code>{{ rule.from }} → {{ rule.to }}</code>
+    <code>{{ rule.from }} → <span class="sinhalafonts">{{ rule.to }}</span></code>
     <span *ngIf="!last"> | </span>
   </ng-container>
 </div>
