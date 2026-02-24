@@ -344,7 +344,7 @@ export class AppComponent implements OnInit {
     'pra': 'm%',
     'pro': 'fm%d',
     'proo': 'fm%da',
-    'pre': 'mA%',
+    'pre': 'fmA%',
     'P': 'Ma',
     'Pa': 'M',
     'Paa': 'Md',
